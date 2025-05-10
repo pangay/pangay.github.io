@@ -20,9 +20,8 @@ repository               : "pangay/pangay.github.io"
 
 # Site Author
 author:
-  avatar           : "profile.png"
+  avatar           : "assets/aoyupang.jpeg"
   name             : "Aoyu Pang"
-  pronouns         : "he/him"
   bio              : "Ph.D. student in Computer and Information Engineering at CUHK-Shenzhen, interested in ITS, RL, and UAM."
   location         : "Shenzhen, China"
   employer         : "The Chinese University of Hong Kong, Shenzhen"
