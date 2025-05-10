@@ -7,40 +7,39 @@
 # server process.
 
 # Basic Site Settings
+# Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
 title                    : "Aoyu Pang"
 title_separator          : "-"
-name                     : &name "Aoyu  Pang"
-description              : &description "personal description"
-url                      : https://pangay.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+name                     : &name "Aoyu Pang"
+description              : &description "Ph.D. student at CUHK-Shenzhen. Research in Intelligent Transportation Systems, Reinforcement Learning, and Urban Air Mobility."
+url                      : https://pangay.github.io
+baseurl                  : "" 
+repository               : "pangay/pangay.github.io"
 
-# Site Author - The following control what appear as part of the author content on the side bar.
-#               If a field is blank the icon and link will not appear, otherwise it will be shown.
-#               Additional customization can be done by editing /_includes/author-profile.html
+# Site Author
 author:
-  # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  name             : "Aoyu Pang"
+  pronouns         : "he/him"
+  bio              : "Ph.D. student in Computer and Information Engineering at CUHK-Shenzhen, interested in ITS, RL, and UAM."
+  location         : "Shenzhen, China"
+  employer         : "The Chinese University of Hong Kong, Shenzhen"
+  uri              : https://pangay.github.io
+  email            : "aoyupang@link.cuhk.edu.cn"
 
   # Academic websites
-  academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
-  semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
-  scopus           : # URL
+  academia         : 
+  arxiv            : 
+  googlescholar    : "https://scholar.google.com/citations?user=b_aQODcAAAAJ"
+  impactstory      : 
+  orcid            : 
+  semantic         : 
+  pubmed           : 
+  researchgate     : 
+  scopus           : 
+
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
