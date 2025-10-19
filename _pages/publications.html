@@ -6,31 +6,38 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+<div class="wordwrap">
+You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.
+</div>
 {% endif %}
 
-{% include base_path %}
+{% comment %}
+  This page renders all publications from _publications folder.
+  We define categories (Journal / Conference / Preprints) and display them separately.
+{% endcomment %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
+{% assign publication_categories = 
+   "journal:Journal Articles,conference:Conference Papers,preprint:Preprints" | split: "," %}
+
+{% for cat in publication_categories %}
+  {% assign cat_key = cat | split: ":" | first %}
+  {% assign cat_name = cat | split: ":" | last %}
+  {% assign has_post = false %}
+
+  {% for pub in site.publications reversed %}
+    {% if pub.category == cat_key %}
+      {% unless has_post %}
+        <h2>{{ cat_name }}</h2><hr />
+        {% assign has_post = true %}
       {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+      <div class="publication-item">
+        <strong>{{ pub.authors }}</strong>, <em>{{ pub.title }}</em>,
+        {% if pub.journal %} {{ pub.journal }}{% endif %}
+        {% if pub.conference %} {{ pub.conference }}{% endif %}
+        {% if pub.year %}, {{ pub.year }}{% endif %}
+        {% if pub.doi %} <a href="https://doi.org/{{ pub.doi }}">[DOI]</a>{% endif %}
+      </div>
+    {% endif %}
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
 
-
-
+{% endfor %}

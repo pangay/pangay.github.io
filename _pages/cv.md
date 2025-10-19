@@ -9,12 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
----
-permalink: /
-title: "Aoyu Pang | Ph.D. Student in Intelligent Transportation Systems"
-author_profile: true
----
-
 # 👋 CV
 ---
 
@@ -73,18 +67,18 @@ author_profile: true
 *Nokia Bell Labs, Paris-Saclay, France*  
 *June 2025 – Present*  
 - Research on machine learning algorithms, modeling, and optimization for networking and predictive analytics.  
-- Member of the [AI Research Lab’s Machine Learning and Systems Group](https://www.bell-labs.com/research-innovation/projects-and-initiatives/air-lab/machine-learning-systems/).
+- Member of the [AI Research Lab’s Machine Learning and Systems Group](https://www.lincs.fr/).
 
-**Visiting Student – Laboratory for Information, Networking and Communication Sciences (LINCS)**  
+**Visiting Student – [Laboratory for Information, Networking and Communication Sciences (LINCS)](https://www.lincs.fr/)**  
 *Paris, France*  
 *June 2025 – Present*  
 - Collaborative research with partners including Inria, Institut Mines-Télécom, and Nokia Bell Labs.  
 
-**Research Assistant – National Key Research and Development Project of China**  
+**Research Assistant – [National Key Research and Development Project of China](https://en.most.gov.cn/programmes1/200610/t20061009_36224.htm)**  
 *6G Omni-Scenario On-Demand Services Provisioning*  
 *June 2023 – Aug 2024*
 
-**Visiting Student – State Key Laboratory of Integrated Services Networks**  
+**Visiting Student – [State Key Laboratory of Integrated Services Networks]()**  
 *Xi’an, China (Prof. Changle Li, Xidian University)*  
 *June 2024 – Aug 2024*
 

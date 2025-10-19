@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "Aoyu Pang | Ph.D. Student in Intelligent Transportation Systems"
+title: "Aoyu Pang | Ph.D. Student in CUHKsz"
 author_profile: true
 header:
-  image: "/assets/aoyupang.jpeg"    # 使用项目中的 assets 文件
+  #image: "/assets/aoyupang.jpeg"    # 使用项目中的 assets 文件
   caption: "欢迎来到我的主页"
   overlay_color: ""                # 为空则不会进入 overlay 模式
   cta_url: "/portfolio/"
-  cta_label: "查看作品"
+  #cta_label: "查看作品"
 ---
 
 # Welcome!
@@ -45,8 +45,8 @@ I aim to develop intelligent decision-making frameworks that integrate **autonom
 
 ## 📬 Contact
 - **Email:** aoyupang@link.cuhk.edu.cn  
-- **GitHub:** [github.com/aoyupang](https://github.com/aoyupang)
-- **LinkedIn:** [linkedin.com/in/aoyupang](https://linkedin.com/in/aoyupang)
+- **GitHub:** [https://github.com/pangay](https://github.com/pangay)
+- **LinkedIn:** [linkedin.com/in/aoyupang](https://www.linkedin.com/in/aoyu-pang-39052b292/)
 
 ---
 
