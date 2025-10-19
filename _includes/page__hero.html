@@ -1,7 +1,11 @@
 {% include base_path %}
 
-{% if page.header.image contains "://" %}
-  {% capture img_path %}{{ page.header.image }}{% endcapture %}
+{% if page.header.image contains "://" or page.header.image contains "/" %}
+  {%- comment -%} If the image is a full URL (contains '://') or already contains a path
+     (contains '/'), treat it as a full path relative to base_path and don't
+     prepend the default /images/ folder. This allows using assets/aoyupang.jpeg
+     or /assets/aoyupang.jpeg directly in front matter. {%- endcomment -%}
+  {% capture img_path %}{{ page.header.image | prepend: base_path }}{% endcapture %}
 {% else %}
   {% capture img_path %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endcapture %}
 {% endif %}
