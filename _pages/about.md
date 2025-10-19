@@ -1,12 +1,12 @@
 ---
 permalink: /
-title: "Aoyu Pang | Ph.D. Student in CUHKsz"
-author_profile: true
-header:
+#title: "Aoyu Pang | Ph.D. Student in CUHKsz"
+#author_profile: true
+#header:
   #image: "/assets/aoyupang.jpeg"    # 使用项目中的 assets 文件
-  caption: "欢迎来到我的主页"
-  overlay_color: ""                # 为空则不会进入 overlay 模式
-  cta_url: "/portfolio/"
+  #caption: "欢迎来到我的主页"
+  #overlay_color: ""                # 为空则不会进入 overlay 模式
+  #cta_url: "/portfolio/"
   #cta_label: "查看作品"
 ---
 
