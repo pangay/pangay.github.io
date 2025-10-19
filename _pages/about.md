@@ -10,8 +10,6 @@ permalink: /
   #cta_label: "查看作品"
 ---
 
-# Welcome!
-
 👋 Hi, I'm **Aoyu Pang (庞奥宇)**, a Ph.D. student in the **School of Data Science at The Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen)**.  
 My research focuses on **Reinforcement Learning**, **Intelligent Transportation Systems (ITS)**, and **Urban Air Mobility (UAM)**.  
 I aim to develop intelligent decision-making frameworks that integrate **autonomous vehicles**, **air taxis**, and **traffic signal control** for future smart cities.
@@ -21,6 +19,7 @@ I aim to develop intelligent decision-making frameworks that integrate **autonom
 ## 🎓 Education
 - **Ph.D. in Computer and Information Engineering**, The Chinese University of Hong Kong, Shenzhen  
   *2023 – Present*
+  
 - **B.Eng. in Automatization**, Nanjing University of Aeronautics and Astronautics (NUAA)  
   *2019 – 2023*
 
