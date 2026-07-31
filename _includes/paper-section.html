@@ -1,0 +1,61 @@
+{% assign has_papers = false %}
+
+{% for paper in papers %}
+  {% if paper.hidden != true and section_categories contains paper.category %}
+    {% unless has_papers %}
+      <section class="paper-section">
+        <h2>{{ section_title }}</h2>
+        <div class="paper-list">
+      {% assign has_papers = true %}
+    {% endunless %}
+
+    <article class="paper-card">
+      <div class="paper-card-main">
+        <h3>
+          <a href="{{ paper.url | relative_url }}">{{ paper.title }}</a>
+        </h3>
+        {% if paper.authors %}
+          <p class="paper-authors">{{ paper.authors }}</p>
+        {% endif %}
+        <p class="paper-venue">
+          {% if paper.venue %}
+            {{ paper.venue }}
+          {% elsif paper.journal %}
+            {{ paper.journal }}
+          {% elsif paper.conference %}
+            {{ paper.conference }}
+          {% endif %}
+          {% if paper.date %}
+            <span>{{ paper.date | date: "%Y" }}</span>
+          {% elsif paper.year %}
+            <span>{{ paper.year }}</span>
+          {% endif %}
+        </p>
+        {% if paper.abstract %}
+          <p class="paper-abstract">{{ paper.abstract | markdownify | strip_html }}</p>
+        {% elsif paper.excerpt %}
+          <p class="paper-abstract">{{ paper.excerpt | markdownify | strip_html }}</p>
+        {% endif %}
+      </div>
+      <div class="paper-links">
+        {% if paper.paperurl %}
+          <a href="{{ paper.paperurl }}">Paper</a>
+        {% endif %}
+        {% if paper.slidesurl %}
+          <a href="{{ paper.slidesurl }}">Slides</a>
+        {% endif %}
+        {% if paper.bibtexurl %}
+          <a href="{{ paper.bibtexurl }}">BibTeX</a>
+        {% endif %}
+        {% if paper.doi %}
+          <a href="https://doi.org/{{ paper.doi }}">DOI</a>
+        {% endif %}
+      </div>
+    </article>
+  {% endif %}
+{% endfor %}
+
+{% if has_papers %}
+    </div>
+  </section>
+{% endif %}
