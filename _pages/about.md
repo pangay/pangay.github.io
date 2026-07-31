@@ -4,17 +4,20 @@ author_profile: true
 ---
 
 <section class="home-hero">
-  <p class="home-kicker">Ph.D. Student · CUHK-Shenzhen</p>
-  <h1>Aoyu Pang</h1>
-  <p class="home-name">庞奥宇</p>
-  <p class="home-lead">
-    I work on reinforcement learning for intelligent transportation systems, with a focus on traffic signal control, urban air mobility, and decision-making systems that can operate reliably in complex cities.
-  </p>
-  <div class="home-actions">
-    <a class="home-button home-button-primary" href="{{ '/papers/' | relative_url }}">View Papers</a>
-    <a class="home-button" href="{{ '/cv/' | relative_url }}">CV</a>
-    <a class="home-button" href="mailto:aoyupang@link.cuhk.edu.cn">Email</a>
+  <div class="home-hero-copy">
+    <p class="home-kicker">Ph.D. Student · CUHK-Shenzhen</p>
+    <h1>Aoyu Pang</h1>
+    <p class="home-name">庞奥宇</p>
+    <p class="home-lead">
+      I work on reinforcement learning for intelligent transportation systems, with a focus on traffic signal control, urban air mobility, and decision-making systems that can operate reliably in complex cities.
+    </p>
+    <div class="home-actions">
+      <a class="home-button home-button-primary" href="{{ '/papers/' | relative_url }}">View Papers</a>
+      <a class="home-button" href="{{ '/cv/' | relative_url }}">CV</a>
+      <a class="home-button" href="mailto:aoyupang@link.cuhk.edu.cn">Email</a>
+    </div>
   </div>
+  <img class="home-portrait" src="{{ site.author.avatar | relative_url }}" alt="Aoyu Pang">
 </section>
 
 <section class="home-section">
